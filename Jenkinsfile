@@ -15,12 +15,12 @@ pipeline {
             }
         }
 
-        stage('Clone Repository') {
-            steps {
-                echo 'Cloning the repository...'
-                sh 'git clone -b main https://github.com/Prasad-1703/chatApp.git'
-            }
-        }
+        // stage('Clone Repository') {
+        //     steps {
+        //         echo 'Cloning the repository...'
+        //         sh 'git clone -b main https://github.com/Prasad-1703/chatApp.git'
+        //     }
+        // }
 
         stage('Check Workspace Files') {
             steps {
