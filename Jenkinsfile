@@ -50,7 +50,7 @@ pipeline {
         stage('Deploy Container') {
             steps {
                     sh 'docker stop chatapp || true'
-                    sh 'docker rm flask-chatapp || true'
+                    sh 'docker rm chatapp || true'
                     sh """
                     docker run -d --name chatapp -p 9000:9000 ${DOCKER_IMAGE}:${IMAGE_TAG}
                 """
